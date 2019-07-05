@@ -1,1 +1,13 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth; }
 
+section {
+  height: 100vh; }
+  section:nth-child(1) {
+    background: lightblue; }
+  section:nth-child(2) {
+    background: lightgreen; }
+  section:nth-child(3) {
+    background: purple; }
