@@ -3,11 +3,21 @@ html, body {
   margin: 0;
   scroll-behavior: smooth; }
 
-section {
+main {
   height: 100vh; }
+
+section {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   section:nth-child(1) {
-    background: lightblue; }
+    background: #F6F7EB; }
   section:nth-child(2) {
-    background: lightgreen; }
+    background: #143642; }
   section:nth-child(3) {
-    background: purple; }
+    background: #0F8B8D; }
+  section:nth-child(4) {
+    background: #EC9A29; }
+  section:nth-child(5) {
+    background: #FE5D26; }
