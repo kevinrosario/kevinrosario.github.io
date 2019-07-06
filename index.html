@@ -4,9 +4,13 @@
       <title>Kevin's Portofolio</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
+      <!-- Stylesheets -->
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link href="assets/styles/main.css" rel="stylesheet">
-      <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+
+      <!-- Scripts -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -15,24 +19,24 @@
     <body>
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#main-section">Kevin's Portofolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navba-markup" aria-controls="navba-markup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse" id="navba-markup">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup.show">
+            <li class="nav-item" data-toggle="collapse" data-target="#navba-markup.show">
               <a class="nav-link"  href="#about-me">About Me</a>
             </li>
-            <li class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup.show">
+            <li class="nav-item" data-toggle="collapse" data-target="#navba-markup.show">
               <a class="nav-link"  href="#projects">Projects</a>
             </li>
-            <li class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup.show">
+            <li class="nav-item" data-toggle="collapse" data-target="#navba-markup.show">
               <a class="nav-link"  href="#skills">Skills</a>
             </li>
-            <li class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup.show">
+            <li class="nav-item" data-toggle="collapse" data-target="#navba-markup.show">
               <a class="nav-link"  href="#contact">Contact</a>
             </li>
-            <li class="nav-item" data-toggle="collapse" data-target="#navbarNavAltMarkup.show">
+            <li class="nav-item" data-toggle="collapse" data-target="#navba-markup.show">
               <a class="nav-link">Resume</a>
             </li>
           </ul>
@@ -63,8 +67,56 @@
 
         <!-- Skills Section -->
         <section id="skills">
-          <div class="container d-flex align-items-center flex-column">
-            Skills
+          <div class="container d-flex align-items-center justify-content-center flex-column ">
+            <div class="row d-flex align-items-center justify-content-center my-4">
+              <div class="col-lg-3"><h5>Front-End Technologies</h5></div>
+              <div class="col-lg-9 d-flex align-items-center justify-content-center">
+                <div class="front-end-gallery gallery">
+                  <div class="gallery-cell"><i class="icon devicon-html5-plain-wordmark"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-css3-plain-wordmark"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-bootstrap-plain-wordmark"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-jquery-plain-wordmark"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-sass-original"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-react-original-wordmark"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center my-4">
+              <div class="col-lg-3"><h5>Back-End Technologies</h5></div>
+              <div class="col-lg-9 d-flex align-items-center justify-content-center">
+                <div class="back-end-gallery gallery">
+                  <div class="gallery-cell"><i class="icon devicon-rails-plain-wordmark"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-nodejs-plain"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-express-original-wordmark"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-postgresql-plain-wordmark"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-mongodb-plain-wordmark"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center my-2">
+              <div class="col-lg-3"><h5>Programming Languages</h5></div>
+              <div class="col-lg-9 d-flex align-items-center justify-content-center">
+                <div class="programming-gallery gallery">
+                  <div class="gallery-cell"><i class="icon devicon-javascript-plain"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-ruby-plain-wordmark"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-java-plain-wordmark"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-python-plain-wordmark"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center my-4">
+              <div class="col-lg-3"><h5>Miscellaneous Things</h5></div>
+              <div class="col-lg-9 d-flex align-items-center justify-content-center">
+                <div class="miscellaneous-gallery gallery">
+                  <div class="gallery-cell"><i class="icon devicon-git-plain-wordmark"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-github-plain-wordmark"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-heroku-original-wordmark"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-amazonwebservices-plain-wordmark"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-linux-plain"></i></div>
+                  <div class="gallery-cell"><i class="icon devicon-gimp-plain"></i></div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -77,5 +129,6 @@
 
       </main>
       <!-- <footer>Kevin 2019</footer> -->
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
 </html>

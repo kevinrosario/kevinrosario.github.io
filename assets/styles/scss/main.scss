@@ -10,6 +10,11 @@ main {
   height: 100vh;
 }
 
+h5 {
+  margin: 1rem;
+  text-align: left;
+}
+
 section {
   height: 100%;
   display: flex;
@@ -26,8 +31,61 @@ section {
   }
   &:nth-child(4) {
     background: $dark-yellow;
+
+    .gallery {
+      width: 60vw;
+
+      .gallery-cell {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+      }
+
+    }
   }
   &:nth-child(5) {
     background: $orange;
+  }
+}
+
+.icon {
+  font-size: 12vw;
+}
+
+.flickity-button {
+  background: $dark-yellow;
+}
+
+.flickity-button:hover {
+  background: #F90;
+}
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.flickity-button-icon {
+  fill: $black;
+}
+
+.flickity-prev-next-button.previous {
+  left: -40px;
+}
+
+.flickity-prev-next-button.next {
+  right: -40px;
+}
+
+@media (min-width: 992px) {
+  .row {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .icon {
+    font-size: 7vw;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 }
