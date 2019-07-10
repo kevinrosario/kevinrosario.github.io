@@ -25,19 +25,19 @@
         <div class="collapse navbar-collapse" id="navba-markup">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item" data-toggle="collapse" data-target="#navba-markup.show">
-              <a class="nav-link"  href="#about-me">About Me</a>
+              <a href="#about-me" class="btn btn-outline-light" role="button" aria-pressed="true">About Me</a>
             </li>
             <li class="nav-item" data-toggle="collapse" data-target="#navba-markup.show">
-              <a class="nav-link"  href="#projects">Projects</a>
+              <a href="#projects" class="btn btn-outline-light" role="button" aria-pressed="true">Projects</a>
             </li>
             <li class="nav-item" data-toggle="collapse" data-target="#navba-markup.show">
-              <a class="nav-link"  href="#skills">Skills</a>
+              <a href="#skills" class="btn btn-outline-light" role="button" aria-pressed="true">Skills</a>
             </li>
             <li class="nav-item" data-toggle="collapse" data-target="#navba-markup.show">
-              <a class="nav-link"  href="#contact">Contact</a>
+              <a href="#contact" class="btn btn-outline-light" role="button" aria-pressed="true">Contact</a>
             </li>
             <li class="nav-item" data-toggle="collapse" data-target="#navba-markup.show">
-              <a class="nav-link">Resume</a>
+              <a href="#" class="btn btn-outline-light" role="button" aria-pressed="true" >Resume</a>
             </li>
           </ul>
         </div>
@@ -46,15 +46,32 @@
       <main>
         <!-- Main Section -->
         <section id="main-section">
-          <div class="container d-flex align-items-center flex-column">
-            Main Section
+          <div class="container">
+            <div class="row">
+              <!-- Quote -->
+              <div class="col-12 d-flex flex-column align-items-center justify-content-center m-2">
+                <q>If you are not willing to risk the unusual, you will have to settle for the ordinary.</q>
+                <p>Jim Rohn</p>
+              </div>
+              <!-- Next Section Button -->
+              <div class="w-100"></div>
+              <div class="col-12 d-flex align-items-center justify-content-center m-2">
+                <a href="#about-me" class="btn btn-outline-light next-page" role="button" aria-pressed="true">&#10507;</a>
+              </div>
+            </div>
           </div>
         </section>
 
         <!-- About Me Section -->
         <section id="about-me">
           <div class="container d-flex align-items-center flex-column">
-            About Me
+            <div class="row">
+              <!-- Image -->
+              <div class="col-12 d-flex align-items-center justify-content-center m-2">
+                <img src="./assets/images/profile.jpg" alt="Kevin's Picture">
+              </div>
+              <div class="w-100"></div>
+            </div>
           </div>
         </section>
 
@@ -67,53 +84,55 @@
 
         <!-- Skills Section -->
         <section id="skills">
-          <div class="container d-flex align-items-center justify-content-center flex-column ">
-            <div class="row d-flex align-items-center justify-content-center my-4">
-              <div class="col-lg-3"><h5>Front-End Technologies</h5></div>
-              <div class="col-lg-9 d-flex align-items-center justify-content-center">
-                <div class="front-end-gallery gallery">
-                  <div class="gallery-cell"><i class="icon devicon-html5-plain-wordmark"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-css3-plain-wordmark"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-bootstrap-plain-wordmark"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-jquery-plain-wordmark"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-sass-original"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-react-original-wordmark"></i></div>
+          <div class="wrapper">
+            <div class="container d-flex align-items-center justify-content-center flex-column">
+              <div class="row d-flex align-items-center justify-content-center my-4">
+                <div class="col-lg-3"><h5>Front-End Technologies</h5></div>
+                <div class="col-lg-9 d-flex align-items-center justify-content-center">
+                  <div class="front-end-gallery gallery">
+                    <div class="gallery-cell"><i class="icon devicon-html5-plain-wordmark"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-css3-plain-wordmark"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-bootstrap-plain-wordmark"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-jquery-plain-wordmark"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-sass-original"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-react-original-wordmark"></i></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row d-flex align-items-center justify-content-center my-4">
-              <div class="col-lg-3"><h5>Back-End Technologies</h5></div>
-              <div class="col-lg-9 d-flex align-items-center justify-content-center">
-                <div class="back-end-gallery gallery">
-                  <div class="gallery-cell"><i class="icon devicon-rails-plain-wordmark"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-nodejs-plain"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-express-original-wordmark"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-postgresql-plain-wordmark"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-mongodb-plain-wordmark"></i></div>
+              <div class="row d-flex align-items-center justify-content-center my-4">
+                <div class="col-lg-3"><h5>Back-End Technologies</h5></div>
+                <div class="col-lg-9 d-flex align-items-center justify-content-center">
+                  <div class="back-end-gallery gallery">
+                    <div class="gallery-cell"><i class="icon devicon-rails-plain-wordmark"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-nodejs-plain"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-express-original-wordmark"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-postgresql-plain-wordmark"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-mongodb-plain-wordmark"></i></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row d-flex align-items-center justify-content-center my-2">
-              <div class="col-lg-3"><h5>Programming Languages</h5></div>
-              <div class="col-lg-9 d-flex align-items-center justify-content-center">
-                <div class="programming-gallery gallery">
-                  <div class="gallery-cell"><i class="icon devicon-javascript-plain"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-ruby-plain-wordmark"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-java-plain-wordmark"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-python-plain-wordmark"></i></div>
+              <div class="row d-flex align-items-center justify-content-center my-2">
+                <div class="col-lg-3"><h5>Programming Languages</h5></div>
+                <div class="col-lg-9 d-flex align-items-center justify-content-center">
+                  <div class="programming-gallery gallery">
+                    <div class="gallery-cell"><i class="icon devicon-javascript-plain"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-ruby-plain-wordmark"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-java-plain-wordmark"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-python-plain-wordmark"></i></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row d-flex align-items-center justify-content-center my-4">
-              <div class="col-lg-3"><h5>Miscellaneous Things</h5></div>
-              <div class="col-lg-9 d-flex align-items-center justify-content-center">
-                <div class="miscellaneous-gallery gallery">
-                  <div class="gallery-cell"><i class="icon devicon-git-plain-wordmark"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-github-plain-wordmark"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-heroku-original-wordmark"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-amazonwebservices-plain-wordmark"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-linux-plain"></i></div>
-                  <div class="gallery-cell"><i class="icon devicon-gimp-plain"></i></div>
+              <div class="row d-flex align-items-center justify-content-center my-4">
+                <div class="col-lg-3"><h5>Miscellaneous Things</h5></div>
+                <div class="col-lg-9 d-flex align-items-center justify-content-center">
+                  <div class="miscellaneous-gallery gallery">
+                    <div class="gallery-cell"><i class="icon devicon-git-plain-wordmark"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-github-plain-wordmark"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-heroku-original-wordmark"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-amazonwebservices-plain-wordmark"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-linux-plain"></i></div>
+                    <div class="gallery-cell"><i class="icon devicon-gimp-plain"></i></div>
+                  </div>
                 </div>
               </div>
             </div>

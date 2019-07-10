@@ -15,22 +15,49 @@ h5 {
   text-align: left;
 }
 
+img {
+  max-width: 35vw;
+  max-height: 35vh;
+  border-radius: 50%;
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.next-page {
+  font-size: 2.5rem;
+}
 section {
+  background-color: $grey;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   &:nth-child(1) {
-    background: $grey;
+    background-image: url('../images/main-section-background.jpg');
+    background-size: cover;
+
+    q {
+      color: white;
+      font-style: italic;
+      font-size: 1.25rem;
+    }
+
+    p {
+      color: white;
+      margin: 0;
+    }
   }
-  &:nth-child(2) {
-    background: $dark-blue;
-  }
-  &:nth-child(3) {
-    background: $light-blue;
-  }
+  // &:nth-child(2) {
+  //   background: $dark-blue;
+  // }
+  // &:nth-child(3) {
+  //   background: $light-blue;
+  // }
   &:nth-child(4) {
-    background: $dark-yellow;
+    // background: $dark-yellow;
 
     .gallery {
       width: 60vw;
@@ -44,7 +71,7 @@ section {
     }
   }
   &:nth-child(5) {
-    background: $orange;
+    // background: $orange;
   }
 }
 
@@ -53,11 +80,11 @@ section {
 }
 
 .flickity-button {
-  background: $dark-yellow;
+  background: $grey;
 }
 
 .flickity-button:hover {
-  background: #F90;
+  background: $dark-grey;
 }
 
 .flickity-prev-next-button {
@@ -79,6 +106,10 @@ section {
 }
 
 @media (min-width: 992px) {
+  .wrapper {
+    margin-top: 4rem !important;
+  }
+
   .row {
     margin-top: 2rem !important;
     margin-bottom: 2rem !important;

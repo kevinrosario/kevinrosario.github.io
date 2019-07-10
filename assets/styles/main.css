@@ -10,36 +10,49 @@ h5 {
   margin: 1rem;
   text-align: left; }
 
+img {
+  max-width: 35vw;
+  max-height: 35vh;
+  border-radius: 50%; }
+
+.btn-outline-light {
+  background-color: transparent;
+  border-color: transparent; }
+
+.next-page {
+  font-size: 2.5rem; }
+
 section {
+  background-color: #F6F7EB;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center; }
   section:nth-child(1) {
-    background: #F6F7EB; }
-  section:nth-child(2) {
-    background: #143642; }
-  section:nth-child(3) {
-    background: #0F8B8D; }
-  section:nth-child(4) {
-    background: #EC9A29; }
-    section:nth-child(4) .gallery {
-      width: 60vw; }
-      section:nth-child(4) .gallery .gallery-cell {
-        display: flex;
-        justify-content: center;
-        width: 30%; }
-  section:nth-child(5) {
-    background: #FE5D26; }
+    background-image: url("../images/main-section-background.jpg");
+    background-size: cover; }
+    section:nth-child(1) q {
+      color: white;
+      font-style: italic;
+      font-size: 1.25rem; }
+    section:nth-child(1) p {
+      color: white;
+      margin: 0; }
+  section:nth-child(4) .gallery {
+    width: 60vw; }
+    section:nth-child(4) .gallery .gallery-cell {
+      display: flex;
+      justify-content: center;
+      width: 30%; }
 
 .icon {
   font-size: 12vw; }
 
 .flickity-button {
-  background: #EC9A29; }
+  background: #F6F7EB; }
 
 .flickity-button:hover {
-  background: #F90; }
+  background: #35495c; }
 
 .flickity-prev-next-button {
   width: 30px;
@@ -56,6 +69,8 @@ section {
   right: -40px; }
 
 @media (min-width: 992px) {
+  .wrapper {
+    margin-top: 4rem !important; }
   .row {
     margin-top: 2rem !important;
     margin-bottom: 2rem !important; }
