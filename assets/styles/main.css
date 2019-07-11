@@ -1,19 +1,61 @@
 html, body {
-  height: 100%;
+  font-family: 'Roboto Slab', serif;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
   scroll-behavior: smooth; }
 
 main {
-  height: 100vh; }
+  height: 100%;
+  width: 100%;
+  margin: 0; }
 
 h5 {
   margin: 1rem;
   text-align: left; }
 
 img {
-  max-width: 35vw;
-  max-height: 35vh;
+  margin: 1.25rem;
+  max-width: 25vw;
+  max-height: 25vh;
   border-radius: 50%; }
+
+q {
+  font-style: italic;
+  display: block;
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+section {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  section:nth-child(1) {
+    background-image: url("../images/main-section-background.jpg");
+    background-size: cover; }
+    section:nth-child(1) q {
+      text-align: center;
+      color: white; }
+    section:nth-child(1) p {
+      color: white; }
+  section:nth-child(2) q {
+    text-align: justify;
+    line-height: 1.25rem;
+    word-break: normal; }
+  section:nth-child(4) .gallery {
+    width: 60vw; }
+    section:nth-child(4) .gallery .gallery-cell {
+      display: flex;
+      justify-content: center;
+      width: 30%; }
+
+.bg-dark {
+  background-color: #35495c !important; }
 
 .btn-outline-light {
   background-color: transparent;
@@ -22,34 +64,20 @@ img {
 .next-page {
   font-size: 2.5rem; }
 
-section {
-  background-color: #F6F7EB;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  section:nth-child(1) {
-    background-image: url("../images/main-section-background.jpg");
-    background-size: cover; }
-    section:nth-child(1) q {
-      color: white;
-      font-style: italic;
-      font-size: 1.25rem; }
-    section:nth-child(1) p {
-      color: white;
-      margin: 0; }
-  section:nth-child(4) .gallery {
-    width: 60vw; }
-    section:nth-child(4) .gallery .gallery-cell {
-      display: flex;
-      justify-content: center;
-      width: 30%; }
+.projects-wrapper {
+  margin-top: 4rem; }
+
+.about-me-wrapper {
+  margin-top: 2.5rem; }
+
+.skills-wrapper {
+  margin-top: 2.5rem; }
 
 .icon {
   font-size: 12vw; }
 
 .flickity-button {
-  background: #F6F7EB; }
+  background: #FFF; }
 
 .flickity-button:hover {
   background: #35495c; }
@@ -69,12 +97,13 @@ section {
   right: -40px; }
 
 @media (min-width: 992px) {
-  .wrapper {
-    margin-top: 4rem !important; }
-  .row {
-    margin-top: 2rem !important;
-    margin-bottom: 2rem !important; }
+  .gallery-cell {
+    min-width: 20%; }
   .icon {
-    font-size: 7vw;
-    padding: 0 !important;
-    margin: 0 !important; } }
+    font-size: 7vw; }
+  .projects-wrapper {
+    margin-top: 0; }
+  .about-me-wrapper {
+    margin-top: 0; }
+  .skills-wrapper {
+    margin-top: 6.5rem; } }
