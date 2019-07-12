@@ -11,7 +11,7 @@ main {
   margin: 0; }
 
 h5 {
-  margin: 1rem;
+  margin: 0;
   text-align: left; }
 
 img {
@@ -23,10 +23,14 @@ img {
 q {
   font-style: italic;
   display: block;
-  margin: 0; }
+  margin: 0;
+  font-size: 2vh;
+  word-break: normal;
+  line-height: 1.50rem; }
 
 p {
-  margin: 0; }
+  margin: 0;
+  font-size: 2vh; }
 
 section {
   height: 100%;
@@ -39,20 +43,25 @@ section {
     background-image: url("../images/main-section-background.jpg");
     background-size: cover; }
     section:nth-child(1) q {
-      text-align: center;
       color: white; }
     section:nth-child(1) p {
       color: white; }
   section:nth-child(2) q {
-    text-align: justify;
-    line-height: 1.25rem;
-    word-break: normal; }
+    text-align: justify; }
   section:nth-child(4) .gallery {
     width: 60vw; }
     section:nth-child(4) .gallery .gallery-cell {
       display: flex;
       justify-content: center;
       width: 30%; }
+
+.icon {
+  font-size: 12vw; }
+
+.project {
+  height: 20vh;
+  width: 20vh;
+  background-color: #0F8B8D; }
 
 .bg-dark {
   background-color: #35495c !important; }
@@ -72,9 +81,6 @@ section {
 
 .skills-wrapper {
   margin-top: 2.5rem; }
-
-.icon {
-  font-size: 12vw; }
 
 .flickity-button {
   background: #FFF; }
@@ -97,6 +103,10 @@ section {
   right: -40px; }
 
 @media (min-width: 992px) {
+  .project {
+    height: 33vh;
+    width: 33vh;
+    background-color: #0F8B8D; }
   .gallery-cell {
     min-width: 20%; }
   .icon {

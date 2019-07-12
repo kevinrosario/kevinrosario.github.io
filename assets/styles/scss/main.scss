@@ -15,7 +15,7 @@ main {
 }
 
 h5 {
-  margin: 1rem;
+  margin: 0;
   text-align: left;
 }
 
@@ -30,10 +30,14 @@ q {
   font-style: italic;
   display: block;
   margin: 0;
+  font-size: 2vh;
+  word-break: normal;
+  line-height: 1.50rem;
 }
 
 p {
   margin: 0;
+  font-size: 2vh;
 }
 
 section {
@@ -48,7 +52,6 @@ section {
     background-size: cover;
 
     q {
-      text-align: center;
       color: white;
     }
 
@@ -59,11 +62,6 @@ section {
   &:nth-child(2) {
     q {
       text-align: justify;
-      line-height: 1.25rem;
-      word-break: normal;
-    }
-
-    p {
     }
   }
   &:nth-child(3) {
@@ -82,6 +80,16 @@ section {
   }
   &:nth-child(5) {
   }
+}
+
+.icon {
+  font-size: 12vw;
+}
+
+.project {
+  height: 20vh;
+  width: 20vh;
+  background-color: $light-blue;
 }
 
 .bg-dark {
@@ -107,10 +115,6 @@ section {
 
 .skills-wrapper {
   margin-top: 2.5rem;
-}
-
-.icon {
-  font-size: 12vw;
 }
 
 // Flickity Buttons style
@@ -141,6 +145,12 @@ section {
 }
 
 @media (min-width: 992px) {
+  .project {
+    height: 33vh;
+    width: 33vh;
+    background-color: $light-blue;
+  }
+
   .gallery-cell {
     min-width: 20%;
   }
@@ -159,16 +169,4 @@ section {
   .skills-wrapper {
     margin-top: 6.5rem;
   }
-  // .wrapper {
-  //   margin-top: 4rem !important;
-  // }
-  //
-  // .projects-wrapper {
-  //   margin-top: 0;
-  // }
-
-  // .row {
-  //   margin-top: 2rem !important;
-  //   margin-bottom: 2rem !important;
-  // }
 }
