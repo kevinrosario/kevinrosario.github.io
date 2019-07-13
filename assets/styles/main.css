@@ -5,6 +5,9 @@ html, body {
   margin: 0;
   scroll-behavior: smooth; }
 
+body {
+  position: relative; }
+
 main {
   height: 100%;
   width: 100%;
@@ -48,15 +51,16 @@ section {
       color: white; }
   section:nth-child(2) q {
     text-align: justify; }
-  section:nth-child(4) .gallery {
-    width: 60vw; }
-    section:nth-child(4) .gallery .gallery-cell {
-      display: flex;
-      justify-content: center;
-      width: 30%; }
+
+.gallery {
+  width: 70vw; }
 
 .icon {
-  font-size: 12vw; }
+  display: block;
+  font-size: 12vw;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  width: 20%; }
 
 .project {
   height: 20vh;
@@ -107,13 +111,14 @@ section {
     height: 33vh;
     width: 33vh;
     background-color: #0F8B8D; }
-  .gallery-cell {
-    min-width: 20%; }
+  .gallery {
+    width: 50vw; }
   .icon {
-    font-size: 7vw; }
+    font-size: 7vw;
+    margin: 0 0; }
   .projects-wrapper {
     margin-top: 0; }
   .about-me-wrapper {
     margin-top: 0; }
   .skills-wrapper {
-    margin-top: 6.5rem; } }
+    margin-top: 0; } }

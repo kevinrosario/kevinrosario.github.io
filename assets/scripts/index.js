@@ -1,32 +1,28 @@
 $(() => {
   $('.front-end-gallery').flickity({
-    contain: true,
     freeScroll: true,
+    contain: true,
     pageDots: false,
-    wrapAround: true
-    // autoPlay: true
+    cellAlign: 'left'
   })
   $('.back-end-gallery').flickity({
-    contain: true,
     freeScroll: true,
+    contain: true,
     pageDots: false,
-    wrapAround: true
-    // autoPlay: true
+    cellAlign: 'left'
   })
 
   $('.miscellaneous-gallery').flickity({
-    contain: true,
     freeScroll: true,
+    contain: true,
     pageDots: false,
-    wrapAround: true
-    // autoPlay: true
+    cellAlign: 'left'
   })
 
   $('.programming-gallery').flickity({
-    contain: true,
     freeScroll: true,
+    contain: true,
     pageDots: false,
-    wrapAround: true
-    // autoPlay: true
+    cellAlign: 'left'
   })
 })

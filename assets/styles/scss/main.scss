@@ -8,6 +8,10 @@ html, body {
   scroll-behavior: smooth;
 }
 
+body {
+  position: relative;
+}
+
 main {
   height: 100%;
   width: 100%;
@@ -67,23 +71,21 @@ section {
   &:nth-child(3) {
   }
   &:nth-child(4) {
-    .gallery {
-      width: 60vw;
-
-      .gallery-cell {
-        display: flex;
-        justify-content: center;
-        width: 30%;
-      }
-
-    }
   }
   &:nth-child(5) {
   }
 }
 
+.gallery {
+  width: 70vw;
+}
+
 .icon {
+  display: block;
   font-size: 12vw;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  width: 20%;
 }
 
 .project {
@@ -151,11 +153,13 @@ section {
     background-color: $light-blue;
   }
 
-  .gallery-cell {
-    min-width: 20%;
+  .gallery {
+    width: 50vw;
   }
+
   .icon {
     font-size: 7vw;
+    margin: 0 0;
   }
 
   .projects-wrapper {
@@ -167,6 +171,6 @@ section {
   }
 
   .skills-wrapper {
-    margin-top: 6.5rem;
+    margin-top: 0;
   }
 }
