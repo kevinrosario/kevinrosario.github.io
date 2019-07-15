@@ -3,7 +3,8 @@ html, body {
   height: 100vh;
   width: 100vw;
   margin: 0;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  background-color: #F6F7EB; }
 
 body {
   position: relative; }
@@ -46,9 +47,9 @@ section {
     background-image: url("../images/main-section-background.jpg");
     background-size: cover; }
     section:nth-child(1) q {
-      color: white; }
+      color: #FFF; }
     section:nth-child(1) p {
-      color: white; }
+      color: #FFF; }
   section:nth-child(2) q {
     text-align: justify; }
 
@@ -68,7 +69,7 @@ section {
   background-color: #0F8B8D; }
 
 .bg-dark {
-  background-color: #35495c !important; }
+  background-color: #3c4047 !important; }
 
 .btn-outline-light {
   background-color: transparent;
@@ -86,11 +87,16 @@ section {
 .skills-wrapper {
   margin-top: 2.5rem; }
 
+.contact-wrapper {
+  margin-top: 2.5rem; }
+
 .flickity-button {
-  background: #FFF; }
+  background: #F6F7EB; }
 
 .flickity-button:hover {
-  background: #35495c; }
+  background: #3c4047; }
+  .flickity-button:hover .flickity-button-icon {
+    fill: #FFF; }
 
 .flickity-prev-next-button {
   width: 30px;
@@ -121,4 +127,6 @@ section {
   .about-me-wrapper {
     margin-top: 0; }
   .skills-wrapper {
+    margin-top: 0; }
+  .contact-wrapper {
     margin-top: 0; } }

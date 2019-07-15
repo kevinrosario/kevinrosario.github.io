@@ -6,6 +6,7 @@ html, body {
   width: 100vw;
   margin: 0;
   scroll-behavior: smooth;
+  background-color: $light-grey;
 }
 
 body {
@@ -56,11 +57,11 @@ section {
     background-size: cover;
 
     q {
-      color: white;
+      color: $white;
     }
 
     p {
-      color: white;
+      color: $white;
     }
   }
   &:nth-child(2) {
@@ -119,13 +120,21 @@ section {
   margin-top: 2.5rem;
 }
 
+.contact-wrapper {
+  margin-top: 2.5rem;
+}
+
 // Flickity Buttons style
 .flickity-button {
-  background: $white;
+  background: $light-grey;
 }
 
 .flickity-button:hover {
   background: $dark-grey;
+
+  .flickity-button-icon {
+    fill: $white;
+  }
 }
 
 .flickity-prev-next-button {
@@ -137,6 +146,7 @@ section {
 .flickity-button-icon {
   fill: $black;
 }
+
 
 .flickity-prev-next-button.previous {
   left: -40px;
@@ -171,6 +181,10 @@ section {
   }
 
   .skills-wrapper {
+    margin-top: 0;
+  }
+
+  .contact-wrapper {
     margin-top: 0;
   }
 }
