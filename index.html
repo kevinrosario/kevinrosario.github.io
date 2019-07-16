@@ -13,7 +13,7 @@
       <link href="assets/styles/colors.css" rel="stylesheet">
 
       <!-- Scripts -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="assets/scripts/index.js" type="text/javascript" charset="utf-8" defer></script>
@@ -39,7 +39,7 @@
               <a href="#contact" class="nav-link">Contact</a>
             </li>
             <li class="nav-item" data-toggle="collapse" data-target="#navba-markup.show">
-              <a href="#" class="nav-link" >Resume</a>
+              <a href="assets/resume/KevinRosarioAdornoResume.pdf" class="nav-link" download>Resume</a>
             </li>
           </ul>
         </div>
@@ -76,11 +76,11 @@
               <div class="row">
                 <!-- Image -->
                 <div class="col-12 d-flex justify-content-center">
-                  <img src="./assets/images/profile.jpg" alt="Kevin's Picture">
+                  <a href="#"><img id="about-me-picture" src="./assets/images/profile.jpg" alt="Kevin's Picture"></a>
                 </div>
                 <div class="w-100"></div>
                 <div class="col-12 d-flex justify-content-center">
-                  <q>I am a Software Engineer that recently graduated from General Assembly's Software Engineering Immersive Program. Prior to attending General Assembly, I attended college at the University of Puerto Rico with my first three years in the Bachelor in Science with Concentration in Microbiology before transferring to their Bachelor in Computer Science program. Due to life events, I relocated to Boston for newer opportunities that would allow me to exploit my creativity and increase my technical knowledge of how computers actually work. I can use my previous knowledge in a totally unrelated field to approach a problem with a different perspective. Also, I would like to bring the underrepresented Latin community closer to technology development and open the doors to people that might struggle due to poverty or any other reason.</q>
+                  <p>I am a Software Engineer that recently graduated from General Assembly's Software Engineering Immersive Program. Prior to attending General Assembly, I attended college at the University of Puerto Rico with my first three years in the Bachelor in Science with Concentration in Microbiology before transferring to their Bachelor in Computer Science program. Due to life events, I relocated to Boston for newer opportunities that would allow me to exploit my creativity and increase my technical knowledge of how computers actually work. I can use my previous knowledge in a totally unrelated field to approach a problem with a different perspective. Also, I would like to bring the underrepresented Latin community closer to technology development and open the doors to people that might struggle due to poverty or any other reason.</p>
                 </div>
               </div>
             </div>
@@ -94,28 +94,47 @@
               <div class="row no-gutters justify-content-center">
                 <div class="col-12 d-inline-flex justify-content-center"><h5>Projects</h5></div>
                 <div class="w-100"></div>
-                <div class="col-auto m-1 d-inline-flex justify-content-center">
-                  <div class="project">
-                    First
-                  </div>
+                <div class="col-auto m-1 d-inline-flex justify-content-center project-image-container">
+                  <a class="project-link" href="https://kevinrosario.github.io/Tic-Tac-Toe-Client">
+                    <img class="project-image" alt="Tic-Tac-Toe" src="/assets/images/Tic-Tac-Toe.png" />
+                    <div class="project-text">
+                      <p>Created a Tic-Tac-Toe game from scratch using HTML, CSS, JavaScript, Bootstrap, jQuery, and Ruby on Rails for the back-end. The game connects to an API created using Ruby on Rails that allows player to access their old games, scores, and a multiplayer feature.
+                        The game was created in four business days and the multiplayer feature uses Server Polling making it possible for two player to play at the same time.</p>
+                    </div>
+                  </a>
                 </div>
-                <div class="col-auto m-1 d-inline-flex justify-content-center">
-                  <div class="project">
-                    Second
-                  </div>
+                <div class="col-auto m-1 d-inline-flex justify-content-center project-image-container">
+                  <a class="project-link" href="https://kevinrosario.github.io/Briscola-Client">
+                    <img class="project-image" alt="Briscola" src="/assets/images/Briscola.png" />
+                    <div class="project-text">
+                      <div class="project-text">
+                        <p>Card game created using HTML, CSS, JavaScript, Bootstrap, jQuery, and Ruby on Rails for the back-end. This game uses the API to store the user data and also acts card as a dealer and allowing the player to play against the computer. The game was created in 5 business days and it allows a player make an account and CRUD the game resource.</p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
                 <!-- <div class="w-100"></div> -->
               </div>
               <div class="row no-gutters justify-content-center">
-                <div class="col-auto m-1 d-inline-flex justify-content-center">
-                  <div class="project">
-                    Third
-                  </div>
+                <div class="col-auto m-1 d-inline-flex justify-content-center project-image-container">
+                  <a class="project-link" href="https://the-local-hosts.github.io/Talk-To-The-Duck-client/">
+                    <img class="project-image" alt="Talk-to-the-Duck" src="/assets/images/Talk-to-the-duck.png" />
+                    <div class="project-text">
+                      <div class="project-text">
+                        <p>Blog created in 3 business days using HTML, CSS, JavaScript, jQuery, Bootstrap, Mongoose, and the Express.js framework running on Node.js. The page allows users to CRUD a blog resource containing a title and a body, see and like posts from other users and also follow other users. Also the users can upload a picture and use it as their profile picture.</p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-                <div class="col-auto m-1 d-inline-flex justify-content-center">
-                  <div class="project">
-                    Fourth
-                  </div>
+                <div class="col-auto m-1 d-inline-flex justify-content-center project-image-container">
+                  <a class="project-link">
+                    <img class="project-image" alt="Under construction" src="/assets/images/Under-construction.png" />
+                    <div class="project-text">
+                      <div class="project-text">
+                        <p>Under Construction</p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -187,22 +206,22 @@
                 <div class="col-lg-6">
                     <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> -->
                   <h3>Get in Touch!</h3>
-                  <form>
+                  <form id="contact-form">
                     <div class="form-row">
                       <div class="form-group col-6">
                         <label for="customer-name">Name</label>
-                        <input type="text" class="form-control" id="customer-name" placeholder="Name">
+                        <input type="text" class="form-control" id="customer-name" placeholder="Name" required>
                       </div>
                       <div class="form-group col-6">
                         <label for="customer-email">Email address</label>
-                        <input type="email" class="form-control" id="customer-email" aria-describedby="emailHelp" placeholder="Email">
+                        <input type="email" class="form-control" id="customer-email" aria-describedby="emailHelp" placeholder="Email" required>
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="customer-messsage">How can I help you?</label>
-                      <textarea class="form-control" id="customer-messsage" rows="3" placeholder="Message"></textarea>
+                      <textarea class="form-control" id="customer-messsage" rows="3" placeholder="Message" required></textarea>
                     </div>
-                    <button type="button" class="btn btn-secondary">Reset</button>
+                    <button type="button" id="reset-forms" class="btn btn-secondary">Reset</button>
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
                 </div>
