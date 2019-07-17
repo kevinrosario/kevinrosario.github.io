@@ -6,11 +6,15 @@ html, body {
   width: 100vw;
   margin: 0;
   scroll-behavior: smooth;
-  background-color: $light-grey;
 }
 
 body {
-  position: relative;
+  position: absolute;
+  background-image: url('../images/main-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
 }
 
 main {
@@ -19,9 +23,20 @@ main {
   margin: 0;
 }
 
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
 h5 {
   margin: 0;
-  text-align: left;
+  text-align: center;
 }
 
 q {
@@ -49,9 +64,14 @@ section {
   &:nth-child(1) {
     background-image: url('../images/main-section-background.jpg');
     background-size: cover;
+    h3 {
+      color: $white;
+      font-style: italic;
+    }
 
     q {
       color: $white;
+      text-align: center;
     }
 
     p {
@@ -64,6 +84,7 @@ section {
     }
   }
   &:nth-child(3) {
+    background-color: $white;
   }
   &:nth-child(4) {
   }
@@ -92,15 +113,6 @@ section {
   background-color: $dark-grey !important;
 }
 
-.btn-outline-light {
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.next-page {
-  font-size: 2.5rem;
-}
-
 .projects-wrapper {
   margin-top: 4rem;
 }
@@ -118,7 +130,6 @@ section {
 }
 
 // Hover overlay
-
 .project-link {
   display: block;
   position: relative;
@@ -153,9 +164,9 @@ section {
 }
 
 // Flickity Buttons style
-.flickity-button {
-  background: $light-grey;
-}
+// .flickity-button {
+//   background: $light-grey;
+// }
 
 .flickity-button:hover {
   background: $dark-grey;
@@ -185,16 +196,30 @@ section {
 
 #about-me-picture {
   margin: 1.25rem;
-  max-width: 25vw;
-  max-height: 25vh;
+  max-width: 30vw;
+  max-height: 30vh;
   border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .icon {
+    display: block;
+    font-size: 7vw;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    width: 20%;
+  }
 }
 
 @media (min-width: 992px) {
   .project-image {
-    height: 33vh;
-    width: 66vh;
-    background-color: $light-blue;
+    height: 25vh;
+    width: 50vh;
+  }
+
+  h4 {
+    margin-bottom: 2rem;
+    text-align: center;
   }
 
   .gallery {
@@ -206,12 +231,26 @@ section {
     margin: 0 0;
   }
 
+  .main-wrapper {
+    max-width: 60vw;
+  }
+
   .projects-wrapper {
     margin-top: 0;
+    max-width: 80vw;
+    max-height: 80vh;
   }
 
   .about-me-wrapper {
+    max-width: 60vw;
     margin-top: 0;
+    h3 {
+      margin-bottom: 2rem;
+    }
+
+    q {
+      line-height: 2rem;
+    }
   }
 
   .skills-wrapper {
@@ -220,5 +259,18 @@ section {
 
   .contact-wrapper {
     margin-top: 0;
+  }
+
+  #about-me-picture {
+    max-width: 30vw;
+    max-height: 30vh;
+    border-radius: 15%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-image {
+    height: 33vh;
+    width: 66vh;
   }
 }

@@ -3,20 +3,33 @@ html, body {
   height: 100vh;
   width: 100vw;
   margin: 0;
-  scroll-behavior: smooth;
-  background-color: #F6F7EB; }
+  scroll-behavior: smooth; }
 
 body {
-  position: relative; }
+  position: absolute;
+  background-image: url("../images/main-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1; }
 
 main {
   height: 100%;
   width: 100%;
   margin: 0; }
 
+h3 {
+  text-align: center;
+  margin: 0; }
+
+h4 {
+  margin: 0;
+  text-align: center;
+  text-decoration: underline; }
+
 h5 {
   margin: 0;
-  text-align: left; }
+  text-align: center; }
 
 q {
   font-style: italic;
@@ -41,12 +54,18 @@ section {
   section:nth-child(1) {
     background-image: url("../images/main-section-background.jpg");
     background-size: cover; }
+    section:nth-child(1) h3 {
+      color: #FFF;
+      font-style: italic; }
     section:nth-child(1) q {
-      color: #FFF; }
+      color: #FFF;
+      text-align: center; }
     section:nth-child(1) p {
       color: #FFF; }
   section:nth-child(2) q {
     text-align: justify; }
+  section:nth-child(3) {
+    background-color: #FFF; }
 
 .gallery {
   width: 70vw; }
@@ -64,13 +83,6 @@ section {
 
 .bg-dark {
   background-color: #3c4047 !important; }
-
-.btn-outline-light {
-  background-color: transparent;
-  border-color: transparent; }
-
-.next-page {
-  font-size: 2.5rem; }
 
 .projects-wrapper {
   margin-top: 4rem; }
@@ -111,9 +123,6 @@ section {
 .project-link:hover .project-text {
   opacity: 1; }
 
-.flickity-button {
-  background: #F6F7EB; }
-
 .flickity-button:hover {
   background: #3c4047; }
   .flickity-button:hover .flickity-button-icon {
@@ -135,25 +144,53 @@ section {
 
 #about-me-picture {
   margin: 1.25rem;
-  max-width: 25vw;
-  max-height: 25vh;
+  max-width: 30vw;
+  max-height: 30vh;
   border-radius: 50%; }
+
+@media (min-width: 768px) {
+  .icon {
+    display: block;
+    font-size: 7vw;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    width: 20%; } }
 
 @media (min-width: 992px) {
   .project-image {
-    height: 33vh;
-    width: 66vh;
-    background-color: #0F8B8D; }
+    height: 25vh;
+    width: 50vh; }
+  h4 {
+    margin-bottom: 2rem;
+    text-align: center; }
   .gallery {
     width: 50vw; }
   .icon {
     font-size: 7vw;
     margin: 0 0; }
+  .main-wrapper {
+    max-width: 60vw; }
   .projects-wrapper {
-    margin-top: 0; }
+    margin-top: 0;
+    max-width: 80vw;
+    max-height: 80vh; }
   .about-me-wrapper {
+    max-width: 60vw;
     margin-top: 0; }
+    .about-me-wrapper h3 {
+      margin-bottom: 2rem; }
+    .about-me-wrapper q {
+      line-height: 2rem; }
   .skills-wrapper {
     margin-top: 0; }
   .contact-wrapper {
-    margin-top: 0; } }
+    margin-top: 0; }
+  #about-me-picture {
+    max-width: 30vw;
+    max-height: 30vh;
+    border-radius: 15%; } }
+
+@media (min-width: 1200px) {
+  .project-image {
+    height: 33vh;
+    width: 66vh; } }
