@@ -1,53 +1,14 @@
+import { handleSubmit, resetForms, flickityParams } from './events.js'
+
 $(() => {
-  $('.front-end-gallery').flickity({
-    freeScroll: true,
-    contain: true,
-    pageDots: false,
-    cellAlign: 'left'
-  })
-  $('.back-end-gallery').flickity({
-    freeScroll: true,
-    contain: true,
-    pageDots: false,
-    cellAlign: 'left'
-  })
-
-  $('.miscellaneous-gallery').flickity({
-    freeScroll: true,
-    contain: true,
-    pageDots: false,
-    cellAlign: 'left'
-  })
-
-  $('.programming-gallery').flickity({
-    freeScroll: true,
-    contain: true,
-    pageDots: false,
-    cellAlign: 'left'
-  })
+  // Scroll set up
+  $('.front-end-gallery').flickity(flickityParams)
+  $('.back-end-gallery').flickity(flickityParams)
+  $('.miscellaneous-gallery').flickity(flickityParams)
+  $('.programming-gallery').flickity(flickityParams)
 
   // Clear all forms
-  $('#reset-forms').on('click', event => {
-    $('.form-control').val('')
-  })
-
+  $('#reset-forms').on('click', resetForms)
   // Send email
-  const handleSubmit = (event) => {
-    event.preventDefault()
-    const name = $('#customer-name').val()
-    const email = $('#customer-email').val()
-    const message = $('#customer-messsage').val()
-    $.ajax({
-      method: 'POST',
-      url: 'http://localhost:7165/send',
-      data: {
-        name: name,
-        email: email,
-        messsage: message
-      }
-    }).then((response) => {
-      console.log(response)
-    }).catch(console.error)
-  }
   $('#contact-form').on('submit', handleSubmit)
 })
