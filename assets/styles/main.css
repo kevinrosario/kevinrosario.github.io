@@ -95,6 +95,22 @@ section {
 
 .contact-wrapper {
   margin-top: 2.5rem; }
+  .contact-wrapper p {
+    line-height: 1.50rem; }
+
+.social-media {
+  text-decoration: none;
+  color: #000;
+  margin-left: .5rem;
+  margin-right: .5rem; }
+
+.social-media:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #0F8B8D; }
+
+.social-media-icon {
+  font-size: 2rem; }
 
 .project-link {
   display: block;
@@ -193,4 +209,6 @@ section {
 @media (min-width: 1200px) {
   .project-image {
     height: 33vh;
-    width: 66vh; } }
+    width: 66vh; }
+  .social-media-icon {
+    font-size: 2.5rem; } }

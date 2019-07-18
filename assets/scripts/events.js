@@ -10,20 +10,31 @@ export const resetForms = event => {
 }
 export const handleSubmit = (event) => {
   event.preventDefault()
-  // const name = $('#customer-name').val()
-  // const email = $('#customer-email').val()
-  // const message = $('#customer-messsage').val()
-  // $.ajax({
-  //   method: 'POST',
-  //   url: 'http://localhost:7165/send',
-  //   data: {
-  //     name: name,
-  //     email: email,
-  //     messsage: message
-  //   }
-  // }).then((response) => {
-  //   console.log(response)
-  // }).catch(console.error)
+  let apiUrl
+  const apiUrls = {
+    production: 'https://stark-anchorage-49208.herokuapp.com/',
+    development: 'http://localhost:3000'
+  }
+
+  if (window.location.hostname === 'localhost') {
+    apiUrl = apiUrls.development
+  } else {
+    apiUrl = apiUrls.production
+  }
+  const name = $('#customer-name').val()
+  const email = $('#customer-email').val()
+  const message = $('#customer-messsage').val()
+  $.ajax({
+    method: 'POST',
+    url: `${apiUrl}/send`,
+    data: {
+      name: name,
+      email: email,
+      message: message
+    }
+  }).then((response) => {
+    console.log(response)
+  }).catch(console.error)
 }
 
 export default handleSubmit

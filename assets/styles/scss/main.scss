@@ -127,6 +127,27 @@ section {
 
 .contact-wrapper {
   margin-top: 2.5rem;
+
+  p {
+    line-height: 1.50rem;
+  }
+}
+
+.social-media {
+  text-decoration: none;
+  color: $black;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.social-media:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: $light-blue;
+}
+
+.social-media-icon {
+  font-size: 2rem;
 }
 
 // Hover overlay
@@ -272,5 +293,9 @@ section {
   .project-image {
     height: 33vh;
     width: 66vh;
+  }
+
+  .social-media-icon {
+    font-size: 2.5rem;
   }
 }

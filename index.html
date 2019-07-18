@@ -16,6 +16,7 @@
       <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/ea31a53c58.js"></script>
       <script src="assets/scripts/events.js" type="module" charset="utf-8" defer></script>
       <script src="assets/scripts/index.js" type="module" charset="utf-8" defer></script>
     </head>
@@ -36,9 +37,9 @@
             <li class="nav-item" data-toggle="collapse" data-target="#navba-markup.show">
               <a href="#skills" class="nav-link">Skills</a>
             </li>
-            <!-- <li class="nav-item" data-toggle="collapse" data-target="#navba-markup.show">
+            <li class="nav-item" data-toggle="collapse" data-target="#navba-markup.show">
               <a href="#contact" class="nav-link">Contact</a>
-            </li> -->
+            </li>
             <li class="nav-item" data-toggle="collapse" data-target="#navba-markup.show">
               <a href="assets/resume/KevinRosarioAdornoResume.pdf" class="nav-link" download>Resume</a>
             </li>
@@ -78,9 +79,7 @@
           <div class="about-me-wrapper">
             <div class="container">
               <div class="row">
-                <div class="col-12 my-1">
-                  <h4>About Me</h4>
-                </div>
+                <div class="col-12"><h4>About Me</h4></div>
                 <div class="w-100"></div>
                 <!-- Image -->
                 <div class="col-xl-4 d-flex justify-content-center align-items-center">
@@ -99,7 +98,7 @@
           <div class="projects-wrapper">
             <div class="container">
               <div class="row no-gutters justify-content-center">
-                <div class="col-12 d-inline-flex justify-content-center"><h4>Projects</h4></div>
+                <div class="col-12"><h4>Projects</h4></div>
                 <div class="w-100"></div>
                 <div class="col-auto-lg m-1 d-inline-flex justify-content-center project-image-container">
                   <a class="project-link" href="https://kevinrosario.github.io/Tic-Tac-Toe-Client">
@@ -120,7 +119,6 @@
                     </div>
                   </a>
                 </div>
-                <!-- <div class="w-100"></div> -->
               </div>
               <div class="row no-gutters justify-content-center">
                 <div class="col-auto m-1 d-inline-flex justify-content-center project-image-container">
@@ -152,7 +150,7 @@
           <div class="skills-wrapper">
             <div class="container">
               <div class="row">
-                <div class="col-12 d-inline-flex justify-content-center"><h4>Skills</h4></div>
+                <div class="col-12"><h4>Skills</h4></div>
                 <div class="w-100"></div>
                 <div class="col-lg-3 my-3 d-flex align-items-center justify-content-start "><h5>Front-End Technologies</h5></div>
                 <div class="col-lg-9 d-flex align-items-center justify-content-center">
@@ -206,7 +204,7 @@
           </div>
         </section>
         <!-- Contact Me Section -->
-        <!-- <section id="contact">
+        <section id="contact">
           <div class="contact-wrapper">
             <div class="container">
               <div class="row">
@@ -227,18 +225,35 @@
                       <label for="customer-messsage">How can I help you?</label>
                       <textarea class="form-control" id="customer-messsage" rows="3" placeholder="Message" required></textarea>
                     </div>
-                    <button type="button" id="reset-forms" class="btn btn-secondary">Reset</button>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="form-buttons d-flex justify-content-center">
+                      <button type="button" id="reset-forms" class="btn btn-secondary mx-2">Reset</button>
+                      <button type="submit" class="btn btn-primary mx-2">Submit</button>
+                    </div>
                   </form>
                 </div>
                 <div class="col-lg-6 my-2">
-                  <h3>Information</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  <div class="row">
+                    <div class="col-12">
+                      <h3>Information</h3>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-12">
+                      <p>I usually respond emails in less than 12 hours. In the meanwhile make sure to follow me in social media to get the lastest updates in my projects! </p>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                      <a class="social-media" href="https://www.facebook.com/people/Kevin-Rosario-Adorno/100003256219292"><i class="social-media-icon devicon-facebook-plain"></i></a>
+                      <a class="social-media" href="https://github.com/kevinrosario"><i class="social-media-icon devicon-github-plain"></i></a>
+                      <a class="social-media" href="https://twitter.com/kevinrosario28"><i class="social-media-icon devicon-twitter-plain"></i></a>
+                      <a class="social-media" href="https://www.instagram.com/kevinrosario28/"><i class="social-media-icon fab fa-instagram"></i></a>
+                      <a class="social-media" href="https://www.linkedin.com/in/kevin-rosario-adorno/"><i class="social-media-icon fab fa-linkedin"></i></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </section> -->
+        </section>
       </main>
       <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
