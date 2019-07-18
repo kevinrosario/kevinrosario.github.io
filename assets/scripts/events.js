@@ -1,3 +1,4 @@
+import apiUrl from './config.js'
 export const flickityParams = {
   freeScroll: true,
   contain: true,
@@ -10,20 +11,10 @@ export const resetForms = event => {
 }
 export const handleSubmit = (event) => {
   event.preventDefault()
-  let apiUrl
-  const apiUrls = {
-    production: 'https://stark-anchorage-49208.herokuapp.com/',
-    development: 'http://localhost:3000'
-  }
-
-  if (window.location.hostname === 'localhost') {
-    apiUrl = apiUrls.development
-  } else {
-    apiUrl = apiUrls.production
-  }
   const name = $('#customer-name').val()
   const email = $('#customer-email').val()
   const message = $('#customer-messsage').val()
+  console.log(apiUrl)
   $.ajax({
     method: 'POST',
     url: `${apiUrl}/send`,
