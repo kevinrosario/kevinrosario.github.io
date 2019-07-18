@@ -25,7 +25,11 @@ export const handleSubmit = (event) => {
     }
   }).then((response) => {
     console.log(response)
-  }).catch(console.error)
+    resetForms()
+  }).catch(err => {
+    console.error(err)
+    resetForms()
+  })
 }
 
 export default handleSubmit
