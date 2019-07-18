@@ -14,7 +14,6 @@ export const handleSubmit = (event) => {
   const name = $('#customer-name').val()
   const email = $('#customer-email').val()
   const message = $('#customer-messsage').val()
-  console.log(apiUrl)
   $.ajax({
     method: 'POST',
     url: `${apiUrl}/send`,
@@ -23,13 +22,9 @@ export const handleSubmit = (event) => {
       email: email,
       message: message
     }
-  }).then((response) => {
-    console.log(response)
-    resetForms()
-  }).catch(err => {
-    console.error(err)
-    resetForms()
   })
+    .then(resetForms)
+    .catch(resetForms)
 }
 
 export default handleSubmit
