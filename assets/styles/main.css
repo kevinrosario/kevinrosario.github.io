@@ -62,10 +62,16 @@ section {
       text-align: center; }
     section:nth-child(1) p {
       color: #FFF; }
-  section:nth-child(2) q {
-    text-align: justify; }
+  section:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0.8); }
+    section:nth-child(2) q {
+      text-align: justify; }
   section:nth-child(3) {
-    background-color: #FFF; }
+    background-color: rgba(255, 255, 255, 0.8); }
+  section:nth-child(4) {
+    background-color: rgba(255, 255, 255, 0.8); }
+  section:nth-child(5) {
+    background-color: rgba(255, 255, 255, 0.8); }
 
 .gallery {
   width: 70vw; }
