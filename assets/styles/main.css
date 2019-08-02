@@ -73,15 +73,12 @@ section {
   section:nth-child(5) {
     background-color: rgba(255, 255, 255, 0.8); }
 
-.gallery {
-  width: 70vw; }
-
 .icon {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 12vw;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-  width: 20%; }
+  margin: 0 .5rem; }
 
 .project-image {
   height: 20vh;
@@ -145,25 +142,6 @@ section {
 .project-link:hover .project-text {
   opacity: 1; }
 
-.flickity-button:hover {
-  background: #3c4047; }
-  .flickity-button:hover .flickity-button-icon {
-    fill: #FFF; }
-
-.flickity-prev-next-button {
-  width: 30px;
-  height: 30px;
-  border-radius: 5px; }
-
-.flickity-button-icon {
-  fill: #000; }
-
-.flickity-prev-next-button.previous {
-  left: -40px; }
-
-.flickity-prev-next-button.next {
-  right: -40px; }
-
 #about-me-picture {
   margin: 1.25rem;
   max-width: 30vw;
@@ -172,11 +150,8 @@ section {
 
 @media (min-width: 768px) {
   .icon {
-    display: block;
-    font-size: 7vw;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-    width: 20%; } }
+    font-size: 6vw;
+    margin: 0 1.25rem; } }
 
 @media (min-width: 992px) {
   .project-image {
@@ -185,11 +160,9 @@ section {
   h4 {
     margin-bottom: 2rem;
     text-align: center; }
-  .gallery {
-    width: 50vw; }
   .icon {
-    font-size: 7vw;
-    margin: 0 0; }
+    font-size: 5vw;
+    margin: 0 1.5rem; }
   .main-wrapper {
     max-width: 60vw; }
   .projects-wrapper {
@@ -204,7 +177,7 @@ section {
     .about-me-wrapper q {
       line-height: 2rem; }
   .skills-wrapper {
-    margin-top: 0; }
+    margin-top: 3rem; }
   .contact-wrapper {
     margin-top: 0; }
   #about-me-picture {

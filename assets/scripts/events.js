@@ -1,10 +1,4 @@
 import apiUrl from './config.js'
-export const flickityParams = {
-  freeScroll: true,
-  contain: true,
-  pageDots: false,
-  cellAlign: 'left'
-}
 
 export const resetForms = event => {
   $('.form-control').val('')
