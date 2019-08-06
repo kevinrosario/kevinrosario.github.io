@@ -25,7 +25,8 @@ h3 {
 h4 {
   margin: 0;
   text-align: center;
-  text-decoration: underline; }
+  text-decoration: underline;
+  text-decoration-color: #F17F29; }
 
 h5 {
   margin: 0;
@@ -73,6 +74,12 @@ section {
   section:nth-child(5) {
     background-color: rgba(255, 255, 255, 0.8); }
 
+.nav-link {
+  color: #F6F7EB !important; }
+
+.active {
+  color: #F17F29 !important; }
+
 .icon {
   display: flex;
   align-items: center;
@@ -84,8 +91,16 @@ section {
   height: 20vh;
   width: 40vh; }
 
-.bg-dark {
-  background-color: #3c4047 !important; }
+.next-page:hover {
+  color: #F17F29 !important; }
+
+.btn-primary {
+  background-color: #F17F29 !important;
+  border-color: #F17F29 !important; }
+
+.btn-primary:hover {
+  background-color: #EC9A29 !important;
+  border-color: #EC9A29 !important; }
 
 .projects-wrapper {
   margin-top: 4rem; }
@@ -110,7 +125,7 @@ section {
 .social-media:hover {
   text-decoration: none;
   cursor: pointer;
-  color: #0F8B8D; }
+  color: #F17F29; }
 
 .social-media-icon {
   font-size: 2rem; }
