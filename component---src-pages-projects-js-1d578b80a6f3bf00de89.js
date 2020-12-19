@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{"16l3":function(e,t,a){"use strict";a.r(t),a.d(t,"gitHubQuery",(function(){return l}));var n=a("q1tI"),r=a.n(n),s=a("vrFN"),i=a("Bl7J"),l=(a("f3/d"),t.default=function(e){e.data.githubData.data.viewer.pinnedItems.nodes;return r.a.createElement(i.a,null,r.a.createElement(s.a,{title:"Projects"}),r.a.createElement("div",{className:"paper"},r.a.createElement("div",{className:"flex flex-wrap justify-start items-start"})))},"425470984")}}]);
+//# sourceMappingURL=component---src-pages-projects-js-1d578b80a6f3bf00de89.js.map
